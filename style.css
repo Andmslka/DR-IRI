@@ -250,6 +250,7 @@ footer .float-emoji{opacity:.4}
   .form-wrap{padding:8px}
   .form-wrap iframe{min-height:560px}
   footer{padding:60px 14px 40px}
+  h1{font-size:clamp(24px,8vw,40px);line-height:1.15}
 }
 
 /* совсем узкие экраны (старые iPhone SE и т.п.) */
