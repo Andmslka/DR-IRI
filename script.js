@@ -79,7 +79,10 @@ ball.addEventListener('click', ()=>{
   setTimeout(()=>ball.classList.remove('party'), 2500);
 });
 
-/* ── буквы заголовка прыгают при наведении ── */
+/* ── буквы прыгают при наведении, слова при переносе остаются целыми ── */
 const t = document.getElementById('title');
-t.innerHTML = [...t.textContent].map(ch =>
-  ch === ' ' ? ' ' : `<span class="ltr">${ch}</span>`).join('');
+t.innerHTML = t.textContent.trim().split(' ').map(word =>
+  `<span class="word">` +
+  [...word].map(ch => `<span class="ltr">${ch}</span>`).join('') +
+  `</span>`
+).join(' ');
