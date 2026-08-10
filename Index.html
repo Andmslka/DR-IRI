@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🍒 Cherry Disco Party — День рождения Ирины Александровны</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍒</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;900&family=Montserrat:wght@400;500;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="rain"></div>
+
+<!-- ═══════════════ ГЛАВНЫЙ ЭКРАН ═══════════════ -->
+<header class="hero">
+  <span class="float-emoji" style="top:18%;left:6%">🍒</span>
+  <span class="float-emoji" style="top:30%;right:7%;animation-delay:1.2s">🪩</span>
+  <span class="float-emoji" style="top:64%;left:10%;animation-delay:2s">✨</span>
+  <span class="float-emoji" style="top:70%;right:12%;animation-delay:.6s">🍒</span>
+
+  <div class="ball-zone" id="ballZone" title="Кликни меня!">
+    <div class="ball-string"></div>
+    <div class="disco-ball"></div>
+    <div class="ball-hint">нажми на шар 😉</div>
+  </div>
+
+  <p class="pretitle">приглашение на день рождения</p>
+  <h1 id="title" class="silver-text">Cherry Disco Party</h1>
+  <p class="subtitle">у Ирины Александровны день рождения</p>
+
+  <div class="info-card">
+    📅 <b>17 октября 2026, суббота, 17:00</b><br>
+    📍 <b>г. Волжский, ул. Мира, 47а, кв. 10</b>
+  </div>
+
+  <div class="count" id="count">
+    <div class="count-box"><b id="d">0</b><span>дней</span></div>
+    <div class="count-box"><b id="h">0</b><span>часов</span></div>
+    <div class="count-box"><b id="m">0</b><span>минут</span></div>
+    <div class="count-box"><b id="s">0</b><span>секунд</span></div>
+  </div>
+</header>
+
+<div class="marquee"><div class="marquee-track">
+  <span>🍒 CHERRY DISCO 🪩 ДЕНЬ РОЖДЕНИЯ ИРИНЫ ✨ ТАНЦУЕМ ДО УТРА 🍒 БЛЕСК И ВИШНЯ 🪩</span>
+  <span>🍒 CHERRY DISCO 🪩 ДЕНЬ РОЖДЕНИЯ ИРИНЫ ✨ ТАНЦУЕМ ДО УТРА 🍒 БЛЕСК И ВИШНЯ 🪩</span>
+</div></div>
+
+<!-- ═══════════════ ДРЕСС-КОД ═══════════════ -->
+<section id="dress">
+  <h2 class="silver-text">🍒 Дресс-код</h2>
+  <p class="section-note">
+    Приходите в нарядах этих цветов. Чёрного нужно совсем немного, только в мелких деталях.
+    <br><span class="hand">и побольше блеска! ✨</span>
+  </p>
+
+  <div class="dress-grid">
+    <div class="color-card">
+      <div class="color-circle c-burgundy">
+        <span class="color-name">Бордовый</span>
+        <span class="color-desc">главный цвет вечера</span>
+      </div>
+    </div>
+    <div class="color-card">
+      <div class="color-circle c-pink">
+        <span class="color-name">Розовый</span>
+        <span class="color-desc">нежный и весёлый</span>
+      </div>
+    </div>
+    <div class="color-card">
+      <div class="color-circle c-silver">
+        <span class="color-name">Серебро</span>
+        <span class="color-desc">добавьте сияния</span>
+      </div>
+    </div>
+    <div class="color-card">
+      <div class="color-circle c-white">
+        <span class="color-name">Белый</span>
+        <span class="color-desc">лёгкий и свежий</span>
+      </div>
+    </div>
+    <div class="color-card">
+      <div class="color-circle c-black">
+        <span class="color-name">Чёрный</span>
+        <span class="color-desc">совсем чуть-чуть</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- общие референсы: вставьте фото внутрь кружков, как показано в комментарии -->
+  <div class="refs">
+    <p class="refs-title">примеры образов</p>
+    <div class="refs-row">
+      <!-- чтобы вставить фото, замените содержимое кружка на <img src="фото1.jpg" alt=""> -->
+      <div class="ref-slot">📷<br>место для фото</div>
+      <div class="ref-slot">📷<br>место для фото</div>
+      <div class="ref-slot">📷<br>место для фото</div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee"><div class="marquee-track">
+  <span>🪩 БОЛЬШЕ БЛЕСКА ✨ БОЛЬШЕ ВИШНИ 🍒 CHERRY DISCO PARTY 🪩</span>
+  <span>🪩 БОЛЬШЕ БЛЕСКА ✨ БОЛЬШЕ ВИШНИ 🍒 CHERRY DISCO PARTY 🪩</span>
+</div></div>
+
+<!-- ═══════════════ ПОДАРКИ / ВИШЛИСТ ═══════════════ -->
+<section id="gifts">
+  <h2 class="silver-text">🎁 Подарки</h2>
+  <div class="card">
+    <p class="section-note" style="margin-bottom:6px">
+      Мне очень важно, чтобы вы пришли и было весело. А если захотите что-то подарить и не знаете, что выбрать, загляните в мой вишлист.
+    </p>
+    <!-- ✏️ ЗАМЕНИТЕ ссылку на ваш вишлист -->
+    <a class="btn" href="https://example.com/wishlist" target="_blank">🍒 Открыть вишлист</a>
+  </div>
+</section>
+
+<!-- ═══════════════ АНКЕТА RSVP ═══════════════ -->
+<section id="rsvp">
+  <h2 class="silver-text">💌 Вы придёте?</h2>
+  <p class="section-note">Заполните, пожалуйста, короткую анкету до 10 октября. Мне важно понимать, сколько гостей ждать.</p>
+
+  <!-- ═══════════ КАК ВСТАВИТЬ АНКЕТУ ═══════════
+       GOOGLE FORMS: создайте форму → «Отправить» → значок «< >» (встроить) →
+       скопируйте значение src (вида https://docs.google.com/forms/d/e/XXXX/viewform?embedded=true).
+       ЯНДЕКС ФОРМЫ: «Поделиться» → «Код для вставки» → скопируйте src из iframe.
+       ЗАМЕНИТЕ ниже: удалите атрибут srcdoc и вставьте src="ваша-ссылка". -->
+  <div class="form-wrap">
+    <iframe loading="lazy"
+      srcdoc="<body style='margin:0;display:flex;align-items:center;justify-content:center;min-height:60vh;background:#3f0719;font-family:Arial,sans-serif;color:#f6c1d6;text-align:center;padding:24px'><p style='font-size:16px;line-height:1.7'>📋 <b>Здесь появится анкета</b><br><br>Вставьте ссылку на Google Формы или Яндекс Формы<br>в код сайта, подсказка в комментарии выше</p></body>">
+    </iframe>
+  </div>
+  <p style="text-align:center;margin-top:16px">
+    <!-- ✏️ ТА ЖЕ ссылка на форму для открытия в новом окне -->
+    <a class="btn" href="https://docs.google.com/forms/" target="_blank" style="margin-top:0">Открыть анкету в новом окне</a>
+  </p>
+</section>
+
+<!-- ═══════════════ ФУТЕР / ПЛЕЙЛИСТ ═══════════════ -->
+<footer>
+  <span class="float-emoji" style="top:14%;left:8%">🪩</span>
+  <span class="float-emoji" style="top:20%;right:9%;animation-delay:1s">🍒</span>
+  <h2 class="silver-text">🎧 Музыка вечера</h2>
+  <p>Собираем общий плейлист. Добавляйте свои любимые треки, мы включим их на празднике.</p>
+  <!-- ✏️ ЗАМЕНИТЕ ссылку на ваш плейлист (Яндекс Музыка, VK, Spotify…) -->
+  <a class="btn btn-silver" href="https://music.yandex.ru/" target="_blank">🎵 Добавляй музыку для совместного прослушивания на мероприятии</a>
+  <p class="tiny">Cherry Disco Party · жду вас 🍒</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
