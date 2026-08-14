@@ -261,3 +261,8 @@ footer .float-emoji{opacity:.4}
   .count-box{min-width:62px}
 }
 h1 .word{display:inline-block;white-space:nowrap}
+/* Золотой */
+.c-gold{background:radial-gradient(circle at 30% 25%,#ffd700,#b8860b 65%,#8b6914);color:#2d1a06}
+
+/* Фуксия (ярко-розовый/пурпурный) */
+.c-fuchsia{background:radial-gradient(circle at 30% 25%,#ff00ff,#c71585 60%,#8b008b);color:#ffe6f9}
